@@ -42,3 +42,16 @@ body {
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 }
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+.mb-medium {
+  margin-bottom: 3rem;
+}
+.mb-large {
+  margin-bottom: 4rem;
+}
+.mb-huge {
+  margin-bottom: 5rem;
+}
