@@ -1,7 +1,7 @@
 {
   "name": "wtf-gulp-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "nexter webpage",
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
