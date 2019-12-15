@@ -3,6 +3,16 @@
   background-color: $color-primary-dark;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: full-start / full-end;
+    grid-row: 1 / span 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+  }
 }
 
 .nav-btn {
@@ -30,5 +40,16 @@
   }
   &::after {
     transform: translateY(1.2rem);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    position: static;
+
+    &::before {
+      transform: translateY(-1.2rem);
+    }
+    &::after {
+      transform: translateY(1rem);
+    }
   }
 }
