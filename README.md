@@ -18,7 +18,7 @@
 ![gallery of our realisation](github/nexter_gallery_footer.jpg)
 
 
-### Page is fully responsive using:
+### Page is responsive by:
 * writing grid which is responsive without any media queries eg. section features
 * adding media queries and correct units
 * changing layout at certain breakpoints
