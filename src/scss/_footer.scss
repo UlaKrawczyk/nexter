@@ -2,6 +2,7 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
   padding: 6.5rem;
+
   .nav {
     &__list {
       list-style: none;
@@ -10,6 +11,7 @@
       grid-gap: 1.2rem;
       align-items: center;
     }
+
     &__link:link,
     &__link:visited {
       display: block;
@@ -23,12 +25,14 @@
       cursor: pointer;
       transition: 0.3s;
     }
+
     &__link:hover,
     &__link:active {
       background-color: rgba(#fff, 0.05);
       transform: translateY(-0.5rem);
     }
   }
+
   &__text {
     max-width: 128rem;
     margin: 4rem auto 1rem auto;

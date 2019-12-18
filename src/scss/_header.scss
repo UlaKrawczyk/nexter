@@ -23,7 +23,6 @@
     height: 3rem;
     justify-self: center;
   }
-
   &__btn {
     align-self: start;
     justify-self: start;
@@ -36,7 +35,6 @@
     align-items: center;
     font-size: 1.6rem;
     color: $color-grey-light-2;
-
     &::before,
     &::after {
       content: "";
@@ -45,7 +43,6 @@
       background-color: currentColor;
     }
   }
-
   &__seenon-logos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
