@@ -1,31 +1,31 @@
-# TRILLO 
-## BEST BOOKING PLACE!
+# NEXTER
+## YOUR HOME, YOUR FREEDOM!
 
-![page layout](github/trillo.jpg)
+![page layout](github/nexter_header.jpg)
 
 
-**If you want to try it out, click here: [Trillo webpage](https://ulakrawczyk.github.io/trillo/)**
+**If you want to try it out, click here: [Nexter webpage](https://ulakrawczyk.github.io/nexter/)**
 
-### This is a simple webpage created during the Udemy course to practise css flex-box:
-* using different properties of flex-box to build overall layout and to position the elements on the page
-* custom properties instead of sass variables
-* adding svg icons and using sprite.svg
-* animated buttons
-* currentColors, mask-image
+### This is a simple webpage created during the Udemy course to practise css grid:
+* using css grid for main layout
+* adding minor grids for smaller components
+* matching different row and column track sizes for different types of content
+* mixing css grid with flex-box
+* css grid gallery
+* pseudoelements as grid items
 
-![mobile view in portrait mode](github/trillo-mobile.jpg)
-
+![desktop view of homes in offer](github/nexter_homes.jpg)
+![gallery of our realisation](github/nexter_gallery_footer.jpg)
 
 
 ### Page is fully responsive using:
-* media queries and correct units
+* writing grid which is responsive without any media queries eg. section features
+* adding media queries and correct units
 * changing layout at certain breakpoints
-* responsive images with resolution switching
 * desktop first technique
 
-![mobile view in landscape mode](github/trillo-mobile-2.jpg)
-
-#### Browser support was also considered (graceful degradation used).
+![mobile view in portrait mode](github/nexter_mobile_features.jpg)
+![mobile view in portrait mode](github/nexter_mobile_main.jpg)
 
 #### To run my project locally, you need:
 
