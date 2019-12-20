@@ -47,10 +47,9 @@ body {
 
   @media only screen and (max-width: $bp-large) {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        8,
-        [col-start] minmax(min-content, 14rem) [col-end]
-      ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
   }
   @media only screen and (max-width: $bp-medium) {
     grid-template-rows: 6rem calc(100vh - 6rem);
@@ -67,4 +66,9 @@ body {
 }
 .mb-huge {
   margin-bottom: 5rem;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-dark-1;
 }
