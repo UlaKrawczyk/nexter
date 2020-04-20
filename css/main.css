@@ -58,6 +58,14 @@ body {
 .mb-huge {
   margin-bottom: 5rem; }
 
+::-moz-selection {
+  background-color: #c69963;
+  color: #54483a; }
+
+::selection {
+  background-color: #c69963;
+  color: #54483a; }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -432,7 +440,9 @@ body {
   .home__img {
     width: 100%;
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
     z-index: 1; }
   .home__like {
     -ms-grid-row: 1;
@@ -487,6 +497,65 @@ body {
       margin-right: 1rem; }
   .home__button {
     grid-column: 1 / -1; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  @supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) or (-webkit-backdrop-filter: blur(8px)) {
+    .modal {
+      -webkit-backdrop-filter: blur(7px);
+              backdrop-filter: blur(7px);
+      background-color: rgba(0, 0, 0, 0.2); } }
+  .modal__inner {
+    width: 70%;
+    padding: 3rem;
+    min-height: 20rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    -o-transition: transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s; }
+    .modal__inner img {
+      width: 100%;
+      display: block; }
+    .modal__inner p {
+      font-size: 2rem;
+      margin-top: 3rem;
+      text-align: center; }
+
+.open {
+  opacity: 1;
+  pointer-events: all; }
+
+.modal.open .modal__inner {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
 
 .gallery {
   grid-column: full-start / full-end;
