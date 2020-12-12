@@ -36,8 +36,13 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+<<<<<<< HEAD
     "node-sass": "^4.14.1",
     "through2": "^3.0.2",
+=======
+    "node-sass": "^4.13.1",
+    "through2": "^3.0.1",
+>>>>>>> 81a891009917fc099478dd1d38a4b9c4e2bd3539
     "vinyl-named": "^1.1.0",
     "webpack": "^4.44.2",
     "webpack-sources": "^1.4.3",
