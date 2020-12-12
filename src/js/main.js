@@ -9,18 +9,15 @@ function handleHomeButton(e) {
   const card = button.closest('.home');
   const imgSrc = card.querySelector('.home__img--js').src;
   const desc = card.dataset.description;
-
   modalIn.innerHTML = `
     <img src="${imgSrc}" alt="chosen interior">
     <p>${desc}</p>
   `;
   modalOut.classList.add('open');
 }
-
 homeButtons.forEach(button => {
   button.addEventListener('click', handleHomeButton);
 });
-
 function closeModal() {
   modalOut.classList.remove('open');
 }
@@ -35,3 +32,4 @@ window.addEventListener('keydown', function(e) {
     closeModal();
   }
 });
+
